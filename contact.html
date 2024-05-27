@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contact-section">
+    <div class="container">
+      <div class="contact-image">
+        <img src="images/contact.jpg" alt="Contact Image">
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="contactReason">Reason for Contacting:</label>
+          <select id="contactReason" name="contactReason">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+
+          <input type="submit" value="Contact Us">
+        </form>
+        <div class="contact-info">
+          <p>Contact</p>
+          <p><a href="mailto:hi@fashion.com">hi@fashion.com</a></p>
+          <p>Based in</p>
+          <p>San Francisco, California</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+    <section class="footer">
+      <div class="socials">
+          <a href="https://www.instagram.com/vaishnav481/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/vincent"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/vincen0078"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vaishnavsolanki/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      </section>
+  </footer>
+</body>
+</html>
